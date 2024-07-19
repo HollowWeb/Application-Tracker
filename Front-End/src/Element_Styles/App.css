@@ -1,0 +1,182 @@
+/* Existing App styles */
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #09001a;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+/* Flexbox for content */
+.content {
+  flex: 1;
+}
+
+/* General Styles for the Nav */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #38374494; /* Dark background color */
+  padding: 20px 25px; /* Adjust padding as needed */
+}
+
+nav a {
+  color: white; /* White text color */
+  text-decoration: none; /* Remove underline */
+  font-size: 20px; /* Adjust font size as needed */
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none; /* Remove bullet points */
+  display: flex;
+  gap: 35px; /* Space between links */
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav img {
+  height: 26px; /* Adjust the logo size as needed */
+}
+
+/* Specific Styles for Different Sections */
+nav .home-link {
+  margin-right: auto; /* Pushes the HOME link to the far left */
+}
+
+nav .logos {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Space between the Indeed and LinkedIn logos */
+}
+
+/* Center the ul */
+nav .center-menu {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Add additional hover effects if needed */
+nav a:hover {
+  color: #ccc; /* Change the color on hover */
+}
+
+/* Footer styles */
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  width: 100%;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.footer-section {
+  flex: 1;
+  padding: 20px;
+  min-width: 200px;
+}
+
+.footer-logo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-section h3 {
+  margin-bottom: 10px;
+}
+
+.footer-section p,
+.footer-section ul {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-section ul {
+  list-style: none;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #1e90ff;
+}
+
+.footer-bottom {
+  background-color: #222;
+  color: #aaa;
+  padding: 10px 0;
+  font-size: 14px;
+}
+
+.footer .fas {
+  margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-section {
+    margin-bottom: 20px;
+  }
+}
+
+/* Ensure the entire page takes up full height */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.future-implementation, .error-page {
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+  color: white;
+}
+
+.future-implementation h2, .error-page h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.future-implementation p, .error-page p {
+  font-size: 1.2em;
+}
